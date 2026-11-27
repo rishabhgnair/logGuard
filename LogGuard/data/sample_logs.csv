@@ -1,0 +1,144 @@
+timestamp,host,event_type,username,status,message
+2024-03-15 08:01:00,web-01,login_attempt,alice,success,User alice authenticated successfully via LDAP.
+2024-03-15 08:07:00,web-01,file_access,alice,success,File /var/log/cron accessed by alice.
+2024-03-15 08:11:00,db-01,login_attempt,bob,success,User bob authenticated successfully via PAM.
+2024-03-15 08:26:00,web-01,file_access,bob,success,File /var/log/cron accessed by bob.
+2024-03-15 08:30:00,web-01,login_attempt,carol,success,User carol authenticated successfully via LDAP.
+2024-03-15 08:44:00,web-01,file_access,carol,success,File /var/log/nginx/access.log accessed by carol.
+2024-03-15 08:47:00,db-01,login_attempt,dave,success,User dave authenticated successfully via LDAP.
+2024-03-15 09:00:00,db-01,file_access,dave,success,File /var/log/nginx/access.log accessed by dave.
+2024-03-15 09:01:00,bastion-01,login_attempt,admin,failed,Authentication failed for admin – attempt 1.
+2024-03-15 09:02:00,bastion-01,login_attempt,admin,failed,Authentication failed for admin – attempt 2.
+2024-03-15 09:03:00,web-01,login_attempt,grace,success,User grace authenticated successfully via SSH.
+2024-03-15 09:03:00,bastion-01,login_attempt,admin,failed,Authentication failed for admin – attempt 3.
+2024-03-15 09:04:00,bastion-01,login_attempt,admin,failed,Authentication failed for admin – attempt 4.
+2024-03-15 09:05:00,bastion-01,login_attempt,admin,failed,Authentication failed for admin – attempt 5.
+2024-03-15 09:16:00,web-01,file_access,grace,success,File /var/log/auth.log accessed by grace.
+2024-03-15 09:22:00,app-srv-01,ssh_login,eve,failed,Failed password for eve from 10.0.8.24 port 50554.
+2024-03-15 09:24:00,app-srv-01,ssh_login,eve,failed,Failed password for eve from 10.0.7.153 port 31698.
+2024-03-15 09:26:00,app-srv-01,ssh_login,eve,failed,Failed password for eve from 10.0.6.29 port 20258.
+2024-03-15 09:27:00,app-srv-01,ssh_login,eve,success,Accepted password for eve after retry.
+2024-03-15 10:01:00,db-01,ssh_login,root,failed,Failed password for root from 192.168.1.42 – possible spray.
+2024-03-15 10:02:00,db-01,ssh_login,admin,failed,Failed password for admin from 192.168.1.42 – possible spray.
+2024-03-15 10:03:00,db-01,ssh_login,sysop,failed,Failed password for sysop from 192.168.1.42 – possible spray.
+2024-03-15 10:04:00,db-01,ssh_login,deployer,failed,Failed password for deployer from 192.168.1.42 – possible spray.
+2024-03-15 10:05:00,db-01,ssh_login,frank,failed,Failed password for frank from 192.168.1.42 – possible spray.
+2024-03-15 11:00:00,web-01,service_stopped,sysop,error,Service nginx stopped unexpectedly – crash detected (segfault).
+2024-03-15 11:30:00,db-02,service_stopped,root,success,Service postgresql stopped gracefully for maintenance.
+2024-03-15 11:46:00,cache-01,system_error,system,error,Redis OOM – killed process to free memory.
+2024-03-15 11:47:00,cache-01,system_error,system,error,Redis OOM – killed process to free memory.
+2024-03-15 11:48:00,cache-01,system_error,system,error,Redis OOM – killed process to free memory.
+2024-03-15 11:49:00,cache-01,system_error,system,error,Redis OOM – killed process to free memory.
+2024-03-15 12:10:00,monitor-01,system_error,system,error,Disk I/O error detected on /dev/sdb1.
+2024-03-15 12:35:00,db-01,file_access,dave,success,File /var/log/nginx/access.log accessed by dave.
+2024-03-15 12:36:00,web-02,login_attempt,dave,success,User dave authenticated successfully via SSH.
+2024-03-15 12:40:00,app-srv-01,sudo_command,dave,success,sudo: dave ran command /usr/bin/apt as root.
+2024-03-15 12:44:00,web-01,login_attempt,dave,success,User dave authenticated successfully via SSH.
+2024-03-15 12:52:00,bastion-01,logout,dave,success,User dave logged out. Session duration 789s.
+2024-03-15 12:58:00,cache-01,sudo_command,grace,success,sudo: grace ran command /usr/bin/systemctl as root.
+2024-03-15 13:01:00,db-01,file_access,grace,success,File /var/log/syslog accessed by grace.
+2024-03-15 13:04:00,monitor-01,sudo_command,grace,success,sudo: grace ran command /usr/bin/useradd as root.
+2024-03-15 13:12:00,db-02,file_access,carol,success,File /var/log/cron accessed by carol.
+2024-03-15 13:13:00,db-01,login_attempt,bob,success,User bob authenticated successfully via LDAP.
+2024-03-15 13:19:00,db-02,ssh_login,eve,success,Accepted password for eve from 10.0.5.102 port 9601.
+2024-03-15 13:21:00,bastion-01,logout,bob,success,User bob logged out. Session duration 656s.
+2024-03-15 13:26:00,db-01,file_access,bob,failed,File /var/log/auth.log accessed by bob.
+2024-03-15 13:34:00,web-01,login_attempt,eve,success,User eve authenticated successfully via PAM.
+2024-03-15 13:36:00,db-01,cron_job,bob,failed,Cron job 'sync_config' completed successfully.
+2024-03-15 13:40:00,web-02,file_access,dave,success,File /var/log/cron accessed by dave.
+2024-03-15 13:43:00,cache-01,ssh_login,frank,success,Accepted password for frank from 10.0.5.41 port 52625.
+2024-03-15 13:51:00,app-srv-01,logout,frank,success,User frank logged out. Session duration 3177s.
+2024-03-15 13:57:00,web-02,file_access,alice,success,File /var/log/cron accessed by alice.
+2024-03-15 14:01:30,app-srv-02,login_attempt,heidi,failed,Authentication failed for heidi (incorrect password).
+2024-03-15 14:03:00,app-srv-02,login_attempt,heidi,failed,Authentication failed for heidi (incorrect password).
+2024-03-15 14:04:00,app-srv-01,login_attempt,dave,success,User dave authenticated successfully via SSH.
+2024-03-15 14:04:30,app-srv-02,login_attempt,heidi,failed,Authentication failed for heidi (incorrect password).
+2024-03-15 14:06:00,app-srv-02,login_attempt,heidi,failed,Authentication failed for heidi (incorrect password).
+2024-03-15 14:09:00,cache-01,file_access,eve,success,File /var/log/nginx/access.log accessed by eve.
+2024-03-15 14:10:00,app-srv-01,logout,eve,success,User eve logged out. Session duration 2777s.
+2024-03-15 14:12:00,bastion-01,ssh_login,eve,success,Accepted password for eve from 10.0.2.210 port 63414.
+2024-03-15 14:13:00,monitor-01,cron_job,dave,success,Cron job 'rotate_logs' completed successfully.
+2024-03-15 14:16:00,web-02,sudo_command,alice,success,sudo: alice ran command /usr/bin/systemctl as root.
+2024-03-15 14:24:00,bastion-01,sudo_command,grace,success,sudo: grace ran command /usr/bin/visudo as root.
+2024-03-15 14:29:00,web-02,ssh_login,heidi,success,Accepted password for heidi from 10.0.6.82 port 59549.
+2024-03-15 14:31:00,cache-01,file_access,grace,success,File /var/log/cron accessed by grace.
+2024-03-15 14:32:00,app-srv-01,sudo_command,frank,success,sudo: frank ran command /usr/bin/useradd as root.
+2024-03-15 14:35:00,cache-01,service_started,root,success,Service nginx started successfully.
+2024-03-15 14:39:00,cache-01,ssh_login,frank,success,Accepted password for frank from 10.0.3.252 port 41804.
+2024-03-15 14:40:00,db-01,service_started,root,success,Service postgresql started successfully.
+2024-03-15 14:45:00,monitor-01,service_started,root,success,Service redis started successfully.
+2024-03-15 14:50:00,db-01,service_started,root,success,Service sshd started successfully.
+2024-03-15 15:10:00,web-01,password_change,alice,success,Password changed successfully for alice.
+2024-03-15 15:20:00,web-01,password_change,carol,success,Password changed successfully for carol.
+2024-03-15 15:30:00,web-01,password_change,dave,success,Password changed successfully for dave.
+2024-03-15 16:02:00,monitor-01,cron_job,root,error,Cron job 'health_check' iteration 1.
+2024-03-15 16:04:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 2.
+2024-03-15 16:06:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 3.
+2024-03-15 16:08:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 4.
+2024-03-15 16:10:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 5.
+2024-03-15 16:12:00,monitor-01,cron_job,root,error,Cron job 'health_check' iteration 6.
+2024-03-15 16:14:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 7.
+2024-03-15 16:16:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 8.
+2024-03-15 16:18:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 9.
+2024-03-15 16:20:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 10.
+2024-03-15 16:22:00,monitor-01,cron_job,root,error,Cron job 'health_check' iteration 11.
+2024-03-15 16:24:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 12.
+2024-03-15 16:26:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 13.
+2024-03-15 16:28:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 14.
+2024-03-15 16:30:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 15.
+2024-03-15 16:32:00,monitor-01,cron_job,root,error,Cron job 'health_check' iteration 16.
+2024-03-15 16:34:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 17.
+2024-03-15 16:36:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 18.
+2024-03-15 16:38:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 19.
+2024-03-15 16:40:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 20.
+2024-03-15 16:42:00,monitor-01,cron_job,root,error,Cron job 'health_check' iteration 21.
+2024-03-15 16:44:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 22.
+2024-03-15 16:46:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 23.
+2024-03-15 16:48:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 24.
+2024-03-15 16:50:00,monitor-01,cron_job,root,success,Cron job 'health_check' iteration 25.
+2024-03-15 17:03:00,app-srv-02,service_started,sysop,success,Service nginx started successfully (PID 30537).
+2024-03-15 17:04:00,db-02,ssh_login,judy,failed,Failed password for judy from 10.0.10.207 port 8957.
+2024-03-15 17:05:00,cache-01,sudo_command,deployer,success,sudo: deployer ran command /usr/bin/systemctl as root.
+2024-03-15 17:09:00,app-srv-01,logout,grace,success,User grace logged out. Session duration 2344s.
+2024-03-15 17:10:00,app-srv-02,service_started,heidi,success,Service cron started successfully (PID 9263).
+2024-03-15 17:11:00,cache-01,sudo_command,dave,success,sudo: dave ran command /usr/bin/passwd as root.
+2024-03-15 17:13:00,app-srv-02,sudo_command,eve,failed,sudo: eve denied – not in sudoers file.
+2024-03-15 17:16:00,bastion-01,service_started,bob,success,Service logrotate started successfully (PID 3394).
+2024-03-15 17:19:00,bastion-01,service_started,alice,success,Service redis started successfully (PID 21001).
+2024-03-15 17:23:00,monitor-01,logout,heidi,success,User heidi logged out. Session duration 1651s.
+2024-03-15 17:25:00,app-srv-01,ssh_login,carol,success,Accepted password for carol from 10.0.9.196 port 28298.
+2024-03-15 17:30:00,app-srv-01,cron_job,grace,success,Cron job 'rotate_logs' completed successfully.
+2024-03-15 17:32:00,web-02,service_started,ivan,success,Service memcached started successfully (PID 9643).
+2024-03-15 17:33:00,db-02,system_error,root,error,"Kernel: I/O error on device sda1, sector 35816."
+2024-03-15 17:35:00,app-srv-01,cron_job,sysop,error,Cron job 'health_check' failed with exit code 1.
+2024-03-15 17:36:00,web-01,password_change,judy,failed,Password change failed for judy: policy violation.
+2024-03-15 17:41:00,db-01,sudo_command,alice,failed,sudo: alice denied – not in sudoers file.
+2024-03-15 17:44:00,web-02,service_started,root,success,Service appserver started successfully (PID 26758).
+2024-03-15 17:47:00,web-02,password_change,frank,success,Password changed successfully for frank.
+2024-03-15 17:48:00,app-srv-01,file_access,dave,success,File /var/log/auth.log accessed by dave.
+2024-03-15 17:51:00,web-01,file_access,ivan,success,File /var/log/cron accessed by ivan.
+2024-03-15 17:56:00,app-srv-01,password_change,admin,failed,Password change failed for admin: policy violation.
+2024-03-15 17:59:00,cache-01,logout,sysop,success,User sysop logged out. Session duration 1839s.
+2024-03-15 18:01:30,app-srv-02,login_attempt,judy,failed,Failed login for judy – automated sweep suspected.
+2024-03-15 18:02:00,bastion-01,password_change,ivan,failed,Password change failed for ivan: policy violation.
+2024-03-15 18:03:00,app-srv-02,login_attempt,heidi,failed,Failed login for heidi – automated sweep suspected.
+2024-03-15 18:04:30,app-srv-02,login_attempt,ivan,failed,Failed login for ivan – automated sweep suspected.
+2024-03-15 18:06:00,cache-01,password_change,admin,success,Password changed successfully for admin.
+2024-03-15 18:06:00,app-srv-02,login_attempt,grace,failed,Failed login for grace – automated sweep suspected.
+2024-03-15 18:07:00,db-01,password_change,admin,success,Password changed successfully for admin.
+2024-03-15 18:07:30,app-srv-02,login_attempt,frank,failed,Failed login for frank – automated sweep suspected.
+2024-03-15 18:12:00,app-srv-02,sudo_command,grace,success,sudo: grace ran command /usr/bin/useradd as root.
+2024-03-15 18:16:00,app-srv-01,login_attempt,carol,success,User carol authenticated successfully via PAM.
+2024-03-15 18:18:00,web-02,cron_job,carol,error,Cron job 'sync_config' failed with exit code 1.
+2024-03-15 18:19:00,monitor-01,system_error,sysop,error,"Kernel: I/O error on device sda1, sector 56615."
+2024-03-15 18:21:00,monitor-01,ssh_login,grace,success,Accepted password for grace from 10.0.10.92 port 38694.
+2024-03-15 18:26:00,web-01,cron_job,deployer,error,Cron job 'rotate_logs' failed with exit code 1.
+2024-03-15 18:27:00,web-01,system_error,root,failed,Process 3053 terminated with signal 11 (segfault).
+2024-03-15 18:29:00,bastion-01,logout,sysop,success,User sysop logged out. Session duration 3067s.
+2024-03-15 18:30:00,db-02,password_change,carol,failed,Password change failed for carol: policy violation.
+2024-03-15 18:31:00,db-02,sudo_command,root,success,sudo: root ran command /usr/bin/useradd as root.
+2024-03-15 18:32:00,web-01,login_attempt,carol,failed,Authentication failed for user carol via PAM.
+2024-03-15 18:36:00,web-02,sudo_command,root,failed,sudo: root denied – not in sudoers file.
+2024-03-15 18:41:00,app-srv-02,login_attempt,root,failed,Authentication failed for user root via PAM.
+2024-03-15 18:44:00,db-01,cron_job,dave,success,Cron job 'sync_config' completed successfully.
+2024-03-16 02:30:00,bastion-01,login_attempt,ivan,success,User ivan logged in successfully at 02:30 from 10.0.9.55.
